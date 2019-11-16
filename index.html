@@ -15,7 +15,8 @@
 <body>
      <div class="container">
         <div class="card">
-            <div class="card-header text-white bg-dark"><h1>Weather Dashboard</h1></div>
+            <div class="card-header text-white bg-dark"><h1>Weather Dashboard<p id="currentDay" class="lead"> </p>
+            </h1></div>
             <div class="card-body">
                 <div class="mainWcont_div">
                     <div class="row">
@@ -28,20 +29,20 @@
                                     </div>
                                 </div>
                                 <div class="main_city">
-                                    <div class="default_city" id='Austin'>Austin</div> <br>
-                                    <div class="default_city" id='Chicago'>Chicago</div> <br>
-                                    <div class="default_city" id='New York'>New York</div> <br>
-                                    <div class="default_city" id='Orlando'>Orlando</div> <br>
-                                    <div class="default_city" id='San Francisco'>San Francisco</div> <br>
-                                    <div class="default_city" id='Seattle'>Seattle</div> <br>
-                                    <div class="default_city" id='Denver'>Denver</div> <br>
-                                    <div class="default_city" id='Atlanta'>Atlanta</div> <br>
+                                    <div class="default_city" id='Austin'data-city="Austin">Austin</div> <br>
+                                    <div class="default_city" id='Chicago' data-city="Chicago">Chicago</div> <br>
+                                    <div class="default_city" id='New York' data-city="New York">New York</div> <br>
+                                    <div class="default_city" id='Orlando' data-city="Orlando">Orlando</div> <br>
+                                    <div class="default_city" id='San Francisco' data-city="San Francisco">San Francisco</div> <br>
+                                    <div class="default_city" id='Seattle' data-city="Seattle">Seattle</div> <br>
+                                    <div class="default_city" id='Denver' data-city="Denver">Denver</div> <br>
+                                    <div class="default_city" id='Atlanta' data-city="Atlanta">Atlanta</div> <br>
                                 </div> 
                         </div> 
                         <div class="col-md-9">
                             <div class="row">
-                                <div class="col-md-12 currentcity">
-                                    <div class="city" ></div>
+                                <div class="col-md-12 currentcity" id="save">
+                                    <div class="city" ><h3></h3><span id="city"></span></div>
                                     <div class="wind"></div>
                                     <div class="humidity"></div>
                                     <div class="temp"></div>
@@ -54,7 +55,27 @@
                                             <p class="day-1">8/16/2019</p>
                                             <i class="day1Icon icon fas fa-sun"></i>
                                             <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
-                                        </div>                                                   
+                                        </div>                              
+                                        <div class="col-md-2 jumbotron bg-primary wklySec">
+                                            <p class="day-1">8/16/2019</p>
+                                            <i class="day1Icon icon fas fa-sun"></i>
+                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
+                                        </div> 
+                                        <div class="col-md-2 jumbotron bg-primary wklySec">
+                                            <p class="day-1">8/16/2019</p>
+                                            <i class="day1Icon icon fas fa-sun"></i>
+                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
+                                        </div> 
+                                        <div class="col-md-2 jumbotron bg-primary wklySec">
+                                            <p class="day-1">8/16/2019</p>
+                                            <i class="day1Icon icon fas fa-sun"></i>
+                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
+                                        </div> 
+                                        <div class="col-md-2 jumbotron bg-primary wklySec">
+                                            <p class="day-1">8/16/2019</p>
+                                            <i class="day1Icon icon fas fa-sun"></i>
+                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
+                                        </div>               
                                     </div>
                                 </div>
                             </div>
@@ -64,6 +85,7 @@
             </div>
         </div>
     </div>
+    <script src="moment.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

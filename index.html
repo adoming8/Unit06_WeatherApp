@@ -42,40 +42,43 @@
                         <div class="col-md-9">
                             <div class="row">
                                 <div class="col-md-12 currentcity" id="save">
-                                    <div class="city" ><h3></h3><span id="city"></span></div>
-                                    <div class="wind"></div>
-                                    <div class="humidity"></div>
-                                    <div class="temp"></div>
+                                   <div><h3 class="city">City<i class="todayIcon fas fa-cloud-sun"></i></h3></div> 
+                                    <div><p>Temperature:<span class="temp">50 °F</span></p></div>
+                                    <div>                                    <p>Humidity: <span class="humidity">0</span>%</p>
+                                    </div>
+                                    <div>                                    <p>Wind Speed: <span class="wind">0</span> MPH</p>
+                                    </div>
+                                    <div><p>UV Index: <span class="uv-index"><span class="uv">0</span></span></p></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 weekforecast">
                                     <div class="row dailyforecast">
-                                        <div class="col-md-2 jumbotron bg-primary wklySec">
-                                            <p class="day-1">8/16/2019</p>
-                                            <i class="day1Icon icon fas fa-sun"></i>
-                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
-                                        </div>                              
-                                        <div class="col-md-2 jumbotron bg-primary wklySec">
-                                            <p class="day-1">8/16/2019</p>
-                                            <i class="day1Icon icon fas fa-sun"></i>
-                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
-                                        </div> 
-                                        <div class="col-md-2 jumbotron bg-primary wklySec">
-                                            <p class="day-1">8/16/2019</p>
-                                            <i class="day1Icon icon fas fa-sun"></i>
-                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
-                                        </div> 
-                                        <div class="col-md-2 jumbotron bg-primary wklySec">
-                                            <p class="day-1">8/16/2019</p>
-                                            <i class="day1Icon icon fas fa-sun"></i>
-                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
-                                        </div> 
-                                        <div class="col-md-2 jumbotron bg-primary wklySec">
-                                            <p class="day-1">8/16/2019</p>
-                                            <i class="day1Icon icon fas fa-sun"></i>
-                                            <p class="fut-temp">Temp: <span class="day1">86.8</span> F</p> 
-                                        </div>               
+                                        <div class="col-md-2 wklySec">
+                                            <p id="day1_date">1Day_Ahead</p>
+                                            <p class="fut-temp">Max Temp: <span id="max_temp1">TBD</span> °F</p>
+                                            <p class="fut-temp">Min Temp: <span id="min_temp1">TBD</span> °F</p> 
+                                        </div>     
+                                        <div class="col-md-2 wklySec">
+                                            <p id="day2_date">2Days_Ahead</p>
+                                            <p class="fut-temp">Max Temp: <span id="max_temp2">TBD</span> °F</p>
+                                            <p class="fut-temp">Min Temp: <span id="min_temp2">TBD</span> °F</p> 
+                                        </div>    
+                                        <div class="col-md-2 wklySec">
+                                            <p id="day3_date">3Days_Ahead</p>
+                                            <p class="fut-temp">Max Temp: <span id="max_temp3">TBD</span> °F</p>
+                                            <p class="fut-temp">Min Temp: <span id="min_temp3">TBD</span> °F</p> 
+                                        </div>  
+                                        <div class="col-md-2 wklySec">
+                                            <p id="day4_date">4Days_Ahead</p>
+                                            <p class="fut-temp">Max Temp: <span id="max_temp4">TBD</span> °F</p>
+                                            <p class="fut-temp">Min Temp: <span id="min_temp4">TBD</span> °F</p> 
+                                        </div>                         
+                                        <div class="col-md-2 wklySec">
+                                            <p id="day5_date">5Days_Ahead</p>
+                                            <p class="fut-temp">Max Temp: <span id="max_temp5">TBD</span> °F</p>
+                                            <p class="fut-temp">Min Temp: <span id="min_temp5">TBD</span> °F</p> 
+                                        </div>  
                                     </div>
                                 </div>
                             </div>
